@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header {
+    .hamburger {
+        display: none;
+    }
+
+    position: fixed;
+    z-index: 300;
+    height: 9vh;
+    width: 100%;
+    background:transparent;
+    transition: .3 ease-in;
+    font-family: 'Roboto Mono',
+    monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .headerbg {
+        background: blue;
+    }
+
+
+    animation-timing-function: ease-out;
+
+    .navbar {
+        margin-right: 1.8rem;
+
+        .active {
+            color: #00abf0;
+        }
+
+    }
+
+    .logo {
+        position: relative;
+        font-size: 25px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 35px;
+
+
+    }
+
+
+
+
+    .navbar a {
+        font-size: 20px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px;
+        transition: 0.3s;
+
+    }
+
+    .navbar a:hover {
+        color: #659aaf;
+    }
+}
+
+.home {
+    height: 100vh;
+    padding: 0px 10%;
+    background: url(https://img.freepik.com/free-photo/white-notebook-black-data-firewall_1150-1733.jpg?size=626&ext=jpg&ga=GA1.1.814189639.1673777870&semt=sph);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ededed;
+    background-position: center;
+    font-family: 'Exo 2', sans-serif;
+    align-items: center;
+
+    .homeContent h2 {
+        display: inline;
+    }
+
+
+    .homeContent h3 {
+        margin-top: 3px;
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: #00abf0;
+    }
+
+    .homeContent {
+
+        position: relative;
+        top: -6%;
+        left: 2%;
+
+
+        position: relative;
+        max-width: 40rem;
+    }
+
+    .homeContent h1 {
+        font-size: 3.4rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+    }
+
+    .homeContent p {
+        h2 {
+            color: #00abf0;
+
+        }
+
+        font-size: 19px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+
+    }
+
+    .homeContent {
+        .btnBox {
+            display: flex;
+            justify-content: space-between;
+            width: 14rem;
+            height: 2rem;
+            animation-name: showTop;
+            animation-duration: 2s;
+
+            a::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: #081b29;
+                z-index: -1;
+                transition: .5s;
+
+            }
+
+            a:hover::before {
+                width: 100%;
+            }
+
+            a {
+                position: relative;
+                overflow: hidden;
+                transition: 0, 5s;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 90px;
+
+                height: 100%;
+                background: #00abf0;
+                border: 2px solid #00abf0;
+                border-radius: 6px;
+                font-size: 15px;
+                color: #081b29;
+                text-decoration: none;
+                font-weight: 600;
+                letter-spacing: 1px;
+                z-index: 1;
+            }
+
+        }
+
+
+
+
+        .btnBox a:nth-child(2) {
+            background: transparent;
+            color: #00abf0;
+        }
+
+        .btnBox a:nth-child(2)::before {
+            background: #00abf0;
+        }
+
+        .btnBox a:nth-child(1):hover {
+            color: #00abf0;
+
+        }
+
+        .btnBox a:nth-child(2):hover {
+            color: #081b29;
+
+        }
+
+    }
+}
+
+.homeSci {
+
+    position: absolute;
+    bottom: 40px;
+    top: 73%;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.homeSci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 14px;
+    color: #00abf0;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+@keyframes showtop {
+    0% {
+        top: -10%;
+
+
+    }
+
+    50% {
+        top: -5%;
+    }
+
+    100% {
+        top: 0;
+
+    }
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        width: 100vw;
+        .navbar nav{
+            display: none;
+        }
+        .navbar nav.open{
+            display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: black;
+    width: 31vw;
+    height: 25vh;
+    border-radius: 6px;
+    top: 70%;
+    a{
+        margin-left: 23px;
+        margin-top: 5px;
+    }
+
+        }
+        
+           
+    
+        // .open {
+
+        //     display: none;
+        //     flex-direction: column;
+        //     position: absolute;
+        //     /* border: 1px solid #fff; */
+        //     height: 30vh;
+        //     width: 31vw;
+        //     padding: 9px;
+        //     top: 74%;
+        //     border-radius: 6px;
+        //     left: 59%;
+        //     background: #3D3A44;
+
+        //     a {
+        //         margin: 9px 2px 0px 8px
+
+        //     }
+        // }
+
+        .hamburger {
+            display: block;
+
+            font-size: 30px;
+            color: white;
+            position: relative;
+            left: -2%;
+        }
+
+        .logo {
+            margin-left: 17px;
+        }
+
+       
+    }
+}
+
+@media screen and (max-width:440px) {
+    .header {
+       
+            .navbar{
+                left: 55%;
+                width: 33vw;
+            }
+    
+        .logo {
+            margin-left: 10px;
+        }
+
+      
+    }
+
+    .home {
+        .homeSci {
+            top: 72%;
+            height: 8vh;
+
+        }
+
+        .homeContent {
+            p {
+                line-height: 1.4;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h3 {
+                margin-top: 2px;
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: #00abf0;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:387px) {
+    .header{
+        .navbar{
+            .open{
+             
+                height: 25vh;
+                left: 55%;
+                width: 36vw;
+                left: 50%;
+
+            }
+        }
+    }
+    .home {
+
+        .homeSci {
+            top: 72%;
+        }
+
+        .homeContent {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            p {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:365px) {
+    .header{
+        .navbar{
+            left: 55%;
+            width: 33vw;
+        }
+    }
+}

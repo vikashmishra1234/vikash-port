@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto+Mono&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.whole {
+
+    .project {
+
+
+
+        display: flex;
+        height: 67vh;
+        background: #3D3A44;
+        color: #ffff;
+
+        .work {
+            width: 48vw;
+            height: 50%;
+            margin-left: 5.3rem;
+            font-family: 'Exo 2', sans-serif;
+
+            h2 {
+                font-size: 4.3rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                margin-top: 1.4rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .btn {
+                position: relative;
+
+                button {
+                    a {
+                        text-decoration: none;
+                        font-family: 'Roboto Mono', monospace;
+                        color: inherit;
+                        font-size: 12px;
+                    }
+
+                    height: 2rem;
+                    width: 6.6rem;
+                    border: none;
+                    background: rgb(248, 248, 86);
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+
+                button:hover {
+                    width: 6.8rem;
+                    transition: .3s ease;
+                    height: 2.2rem;
+
+                }
+            }
+
+        }
+
+        .image {
+
+            background-image: url(background.jpg);
+            width: 40vw;
+            height: 74%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 9px;
+
+            margin-top: 2rem;
+            margin-left: 1rem;
+            transition: 1s ease-in-out;
+        }
+
+        .image:hover {
+            width: 40.1vw;
+            height: 75%;
+
+        }
+    }
+
+    .cards {
+
+        .look {
+            display: flex;
+            align-items: center;
+
+
+            img {
+                height: 3rem;
+                position: relative;
+                left: 8%;
+            }
+
+            h2 {
+                color: #ffff;
+                font-family: 'Roboto Mono', monospace;
+                position: relative;
+                left: 6%;
+                font-size: 2em;
+            }
+        }
+
+        height: 130vh;
+        background: #3D3A44;
+
+        .card1 {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px;
+
+        }
+
+        .card2 {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px;
+
+        }
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .whole {
+        .project {
+            flex-direction: column;
+            height: 142vh;
+
+            .image {
+                width: 74vw;
+                height: 28%;
+
+                border-radius: 9px;
+
+                margin-left: 1rem;
+
+                img {}
+            }
+
+            .work {
+                margin-left: 2.3rem;
+                height: 43%;
+
+                p {
+                    font-size: 1.2rem;
+                    width: 70vw;
+                    line-height: 1.4;
+
+                }
+
+                h2 {
+                    font-size: 2.9rem;
+                }
+
+                .btn {
+                    button {
+                        background-color: blue;
+                        width: 5.5rem;
+                        height: 2.2rem;
+                        border-radius: 5px;
+
+                        a {
+
+                            font-family: 'Times New Roman', Times, serif;
+                            font-weight: 400;
+                            color: #ffff;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

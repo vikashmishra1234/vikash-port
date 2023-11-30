@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+.whole {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://w0.peakpx.com/wallpaper/476/51/HD-wallpaper-triangle-solid-black-gold-laptop-full-background-and.jpg');
+
+    .contactinfo {
+        font-size: 23px;
+        position: relative;
+        left: 12%;
+        top: 27%;
+        height: 73vh;
+
+        .contactInfo {
+            font-size: 29px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: rgb(82, 82, 190);
+            font-weight: 700;
+
+        }
+
+        .profile {
+            display: flex;
+
+        }
+
+        .social {
+            margin-top: 46px;
+            display: inline;
+        }
+
+        .icon {
+            display: inline;
+            position: absolute !important;
+            top: 65%;
+            left: 21%;
+
+            height: 60px;
+
+            a {
+                margin-left: 15px;
+                font-size: 29px;
+
+            }
+
+
+            #insta:hover {
+                position: relative;
+                top: 13%;
+                transition: 1s ease;
+                color: red;
+
+
+
+            }
+
+            #linked:hover {
+
+                position: relative;
+                top: 13%;
+                transition: 1s ease;
+                color: blue;
+
+
+
+            }
+
+            #whats:hover {
+                position: relative;
+                top: 13%;
+                transition: 1s ease;
+                color: lightgreen;
+
+
+            }
+        }
+
+        a {
+            color: #fff;
+
+            font-size: 25px;
+            text-decoration: none;
+
+
+        }
+
+        .phone {
+            a {
+                text-decoration: none;
+            }
+
+            margin: 28px 0px 28px 0px;
+        }
+
+        .email {
+            margin: 28px 0px 28px 0px;
+            text-decoration: none;
+
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+
+        .location {
+            margin: 28px 0px 28px 0px;
+        }
+    }
+
+    .wrappper {
+        position: relative;
+        left: -8%;
+        top: 29%;
+        height: 62vh;
+        font-family: 'Lato', sans-serif;
+        .talk{
+            position: absolute;
+            top: -35%;
+            left: -39%;
+            font-size: 35px;
+            color: lightblue;
+        }
+        
+
+
+
+        .container {
+
+            height: 70vh;
+
+            .span {
+                font-size: 35px;
+                font-family: 'Courier New', Courier, monospace;
+                position: relative;
+                top: -4%;
+
+            }
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    color: #fff;
+                    padding: 10px;
+                    margin: 15px 2px 15px 2px;
+                    height: 2.8rem;
+                    font-size: 20px;
+                    width: 25em;
+                    border: none;
+                    border-radius: 4px;
+                    background-color: rgb(61, 58, 58);
+                    box-shadow: 3px 3px 2px lightblue;
+                 
+                }
+            }
+
+            .button {
+                margin-top: 25px;
+
+                button {
+                    cursor: pointer;
+                    height: 2em;
+                    width: 4em;
+                    font-size: 18px;
+                    border: none;
+                    border-radius: 6px;
+                    background-color: rgb(37, 37, 214);
+                    color: #fff;
+         
+                }
+                button:hover{
+                    background-color:skyblue;
+                    color: rgb(0, 0, 0);
+                    
+                }
+            }
+            
+        }
+        
+    }
+}
+@media screen and (max-width: 480px) {
+   .whole{
+    height: 150vh;
+   
+    .contactinfo{
+        font-size: 25px;
+    left: 8%;
+    top: 50%;
+        .contactInfo{
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 23px;
+            width: 47vw;
+        }
+        .profile {
+            margin: 0px 0px 0px 0px ;
+
+            
+        }
+        .phone {
+            margin: 12px 0px 12px px ;
+        }
+        .email {
+            margin: 12px 0px 12px 0px ;
+            width: 16em;
+        }
+        .location{
+            margin: 12px 0px 12px px ;
+        }
+        .social{
+            
+            display: block;
+            margin-top: 15px;
+
+        }
+        .icon{
+            top: 58%
+            ;
+            left: 27%;
+           
+            #insta{
+                font-size: 40px;
+                margin-right: -10px;
+
+            }
+            #linked{
+                font-size: 40px;
+                margin-right: -10px;
+
+            }
+            #whats{
+                font-size: 40px;
+            }
+            a{
+            }
+        }
+
+    }
+    .wrappper{
+
+        position: relative;
+        top: 12%;
+        left: -82%;
+               max-height: 25vh;
+        .talk{
+            position: absolute;
+            top: -49%;
+            width: 19rem;
+            left: 14%;
+            font-size: 42px;
+        }
+
+        .container{
+            height: 29vh;
+            .span{
+                font-size: 38px;
+            }
+            .inputs{
+                input{
+                    width: 24rem;
+    height: 3.4rem;
+    padding: 8px;
+    font-size: 12px;
+    font-size: 26px;
+    margin: 13px;
+                }
+            }
+            .button{
+                margin-top: 13px;
+                button{
+                
+                    height: 2.5em;
+    width: 6em;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 10px;
+                }
+            }
+        }
+    }
+   }
+}
+@media screen and (max-width: 460px) {
+    .whole{
+        .contactinfo{
+            .contactInfo{
+                width: 54vw;
+
+            }
+            .icon{
+                top: 58%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 442px) {
+    .whole{
+        .wrappper{
+            left: -89%;
+            .container{
+
+            }
+            .talk{
+
+            }
+        }
+        .contactinfo{
+            .contactInfo{
+
+            }
+            .icon{
+                top: 58%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 429px) {
+    .whole{
+
+        .contactinfo{
+            font-size:20px ;
+            left: 4%;
+            .contactInfo{
+
+            }
+            .icon{
+                top: 56%;
+                left: 20%;
+                #whats{
+                    font-size: 32px;
+                }
+                #insta{
+                    font-size: 32px;
+                }
+                #linked{
+                    font-size: 32px;
+                }
+            }
+            .email{
+                width: 20em;
+            }
+        }
+        .wrappper{
+            .container{
+
+                .inputs{
+                    input{
+                        width: 21rem;
+        height: 3.2rem;
+        padding: 8px;
+        font-size: 12px;
+        font-size: 23px;
+        margin: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .whole{
+        .contactinfo{
+            font-size: 17px;
+            a{
+                font-size: 17px;
+            }
+            .contactInfo{
+                width: 60vw;
+            }
+            .icon{
+                top: 49%;
+            }
+        }
+        .wrappper{
+            left: -80%;
+            .talk{
+                left: 6%;
+            }
+            left: -97%;
+            .container{
+
+                .inputs{
+                    input{
+                        width: 18rem;
+
+                    }
+                    
+                }
+                .button{
+                    button{
+                            height: 2.5em;
+    width: 5em;
+    font-size: 20px;
+    border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .whole{
+        .wrappper{
+            left: -85%;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .whole{
+        .wrappper{
+            left: -89%;
+
+        }
+        .contactinfo{
+            top: 45%;
+            .contactInfo{
+                width: 72vw;
+                
+            }
+            .icon{
+                top: 50%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 390px) {
+    .whole{
+        height: 102vh;
+        .wrappper{
+            left: -82%;
+            
+        }
+        .contactinfo{
+            height: 38vh;
+            top: 59%;
+            .icon{
+                top: 92%;
+            }
+
+        }
+    }
+
+}
+@media screen and (max-width: 365px) {
+    .whole{
+        .wrappper{
+            left: -89%;
+            .talk{
+             
+                top:-41%;
+                left: 12%;
+                width: 80vw;
+                font-weight: 700;
+                font-size: 40px;
+                font-family: 'cursive',sans-serif;
+            }
+        }
+        .contactinfo{
+            .contactInfo{
+                font-size: 32px;
+                color: #fff;
+            }
+            .icon{
+                top: 83%;
+            }
+            #social{
+                position: relative;
+                top: 6%;
+                font-size: 1.2em;
+            }
+          
+            .phone{
+                margin: 20px 0px 20px 0px;
+            }
+            .profile{
+                margin: 20px 0px 20px 0px;
+            }
+            .email{
+                margin: 20px 0px 20px 0px;
+            }
+            .location{
+                margin: 20px 0px 20px 0px;
+            }
+        }
+    }
+}
